@@ -11,7 +11,7 @@ data1 <- subset(full_data, subset = (Date >= "2007-02-01" & Date <= "2007-02-02"
 data1$datetime <- strptime(paste(data1$Date, data1$Time), "%Y-%m-%d %H:%M:%S")
 data1$datetime <- as.POSIXct(data1$datetime)
 
-## Create Plot 2
+## Create Plot 3
 attach(data1)
 plot(Sub_metering_1 ~ datetime, type = "l", ylab = "Energy sub metering", xlab = "")
 lines(Sub_metering_2 ~ datetime, col = "Red")
