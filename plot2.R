@@ -15,7 +15,6 @@ data1$datetime <- as.POSIXct(data1$datetime)
 attach(data1)
 plot(Global_active_power ~ datetime, type = "l",ylab = "Global Active Power (kilowatts)", xlab = "")
 
-
 ## Save the plot into your working directory
 dev.copy(png, file = "plot2.png", height = 480, width = 480)
 dev.off()
